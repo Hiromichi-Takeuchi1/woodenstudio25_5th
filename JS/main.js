@@ -42,7 +42,7 @@ const mm = gsap.matchMedia();
 mm.add("(min-width: 1025px)", () => {
   gsap.fromTo(
     ".concept-first .column-left",
-    5,
+    3,
     { 
       x: -100,
       opacity: 0  // ← 「opcity」ではなく「opacity」
@@ -51,7 +51,7 @@ mm.add("(min-width: 1025px)", () => {
       x: 0,
       opacity: 1,
       scrollTrigger: {
-        trigger: ".concept-second .column-left",
+        trigger: ".concept-first .column-left",
         start: "top center",
         // markers: true
       }
@@ -60,7 +60,7 @@ mm.add("(min-width: 1025px)", () => {
 
   gsap.fromTo(
     ".concept-first .column-right",
-    5,
+    3,
     {
       x: 100,
       opacity: 0  // ← 「opcity」ではなく「opacity」
